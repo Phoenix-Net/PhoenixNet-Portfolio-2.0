@@ -5,4 +5,4 @@ Hopefully this bad boy will gain some attention with some potential employers, o
 
 I also added the ability to blow up images on the front-page since I didn't realize that some people are legally blind and can't see very well apparently. :>
 
-![Image of Site Demo](https://cdn.gsheps.com/DZrN.gif)
+![Image of Site Demo](https://github.com/Phoenix-Net/PhoenixNet-Portfolio-2.0/raw/main/assets/img/demo.gif)
