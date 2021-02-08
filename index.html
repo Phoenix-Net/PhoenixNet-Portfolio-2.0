@@ -94,16 +94,6 @@
     <a class="lightbox-close" href="#"></a>
   </div>
 
-  <div class="lightbox-target" id="phoenixnetcdn">
-    <img src="assets/img/project-pics/phoenixnetcdn.png" width="auto" height="auto"></img>
-    <a class="lightbox-close" href="#"></a>
-  </div>
-
-  <div class="lightbox-target" id="dogcraft">
-    <img src="assets/img/project-pics/dogcraft.png" width="auto" height="auto"></img>
-    <a class="lightbox-close" href="#"></a>
-  </div>
-
   <div class="lightbox-target" id="vcenter">
     <img src="assets/img/project-pics/vcenter.png" width="auto" height="auto"></img>
     <a class="lightbox-close" href="#"></a>
@@ -129,8 +119,40 @@
     <a class="lightbox-close" href="#"></a>
   </div>
 
+  <div class="lightbox-target" id="truenas">
+    <img src="assets/img/project-pics/truenas.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#"></a>
+  </div>
+
   <div class="lightbox-target" id="octoprint">
     <img src="assets/img/project-pics/octoprint.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#"></a>
+  </div>
+
+  <div class="lightbox-target" id="TICK">
+    <img src="assets/img/project-pics/grafana.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#"></a>
+  </div>
+
+  <div class="lightbox-target" id="HASSIO">
+    <img src="assets/img/project-pics/hassio.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#"></a>
+  </div>
+
+  <!-- PROJECT LIGHTBOXES-->
+
+  <div class="lightbox-target" id="reviveMC74">
+    <img src="assets/img/project-pics/revivemc74.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#"></a>
+  </div>
+
+  <div class="lightbox-target" id="phoenixnetcdn">
+    <img src="assets/img/project-pics/phoenixnetcdn.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#"></a>
+  </div>
+
+  <div class="lightbox-target" id="dogcraft">
+    <img src="assets/img/project-pics/dogcraft.png" width="auto" height="auto"></img>
     <a class="lightbox-close" href="#"></a>
   </div>
 
@@ -148,65 +170,13 @@
 
             <div class="card-body">
               <p class="card-text"><strong class="bluestrong">PhoenixCloud:</strong><br/>
-              My alternative to Google Drive, I use it to store and share files with my colleagues.</p>
+              My alternative to Google Drive, I use it to store and share files with my colleagues. Essentially the beginning of my labbing experience.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://cloud.gsheps.net" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Visit</a>
-                </div>
                 <small class="text-muted"><a href="https://nextcloud.com/">(Nextcloud)</a></small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <a class="lightbox" href="#phoenixnetcdn">
-              <img src="assets/img/project-pics/phoenixnetcdn.png" width="100%" height="225" focusable="false"></img>
-            </a>
-
-            <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">PhoenixNet CDN:</strong><br/>
-              Screenshot / Text Sharing CDN I modded to meet my needs, includes security improvements and branding.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://cdn.gsheps.com" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Visit</a>
-                </div>
-                <small class="text-muted"><a href="https://github.com/Phoenix-Net/ShareX-Upload-Server">Share-S Server</a></small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <a class="lightbox" href="#dogcraft">
-              <img src="assets/img/project-pics/dogcraft.png" width="100%" height="225" focusable="false"></img>
-            </a>
-
-            <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">DogCraft:</strong><br/>
-              A small friend-based PaperMC 1.16.4 Server that I whipped up for us to play from time to time.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a id="ip" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true" onClick="copyToClipboard('#ip')">dogcraft.gsheps.net</a>
-                </div>
-                <small class="text-muted"><em><-- Click to copy!</em> (Minecraft) <!--I don't think I need to link this, bite me. --></small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Brainiacs, I found this juicy one on codepen: https://codepen.io/shaikmaqsood/pen/XmydxJ It's gets the job done imho. -->
-
-        <script type="text/javascript">
-            function copyToClipboard(element) {
-              var $temp = $("<input>");
-              $("body").append($temp);
-              $temp.val($(element).text()).select();
-              document.execCommand("copy");
-              $temp.remove();
-            }
-      </script>
-
         <div class="col">
           <div class="card shadow-sm">
             <a class="lightbox" href="#vcenter">
@@ -283,6 +253,23 @@
             </div>
           </div>
         </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#truenas">
+              <img src="assets/img/project-pics/truenas.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">TrueNAS:</strong><br/>
+              The centralized point of storage in my lab, sub-hosting my Plex, NextCloud, and Kamanga VMs and providing SMB shares for desktop clients.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://truenas.com">(TrueNAS)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col">
           <div class="card shadow-sm">
             <a class="lightbox" href="#octoprint">
@@ -298,10 +285,122 @@
             </div>
           </div>
         </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#TICK">
+              <img src="assets/img/project-pics/grafana.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Grafana/TICK Stack:</strong><br/>
+              A way to gather, interpret, and display data onto a easily readible web-based interface. Useful for monitoring my lab from one centralized display.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://grafana.com/">(Grafana/InfluxDB)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#HASSIO">
+              <img src="assets/img/project-pics/hassio.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Homeassistant:</strong><br/>
+              A centralized dashboard for controlling all the smarthome devices on my network with custom integrations including Plex, Tile, etc.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://www.home-assistant.io/">(Hass.io)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
+  <section class="text-center container-fluid">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1>Projects</h1>
+        <p class="lead">Some of my favorite passion-projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+          <a class="lightbox" href="#reviveMC74">
+            <img src="assets/img/project-pics/revivemc74.png" width="100%" height="225" focusable="false"></img>
+          </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">ReviveMC74:</strong><br/>
+              Focusing on the revival, reuse, and implementation of Cisco Meraki MC74 VoIP Phones from the ground up.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://revivemc74.com" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#phoenixnetcdn">
+              <img src="assets/img/project-pics/phoenixnetcdn.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">PhoenixNet CDN:</strong><br/>
+              Screenshot / Text Sharing CDN I modded to meet my needs, includes security improvements and branding.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://cdn.gsheps.com" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Visit</a>
+                </div>
+                <small class="text-muted"><a href="https://github.com/Phoenix-Net/ShareX-Upload-Server">Share-S Server</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#dogcraft">
+              <img src="assets/img/project-pics/dogcraft.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">DogCraft:</strong><br/>
+              A small friend-based PaperMC 1.16.4 Server that I whipped up for us to play from time to time.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a id="ip" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true" onClick="copyToClipboard('#ip')">dogcraft.gsheps.net</a>
+                </div>
+                <small class="text-muted"><em><-- Click to copy!</em> (Minecraft) <!--I don't think I need to link this, bite me. --></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brainiacs, I found this juicy one on codepen: https://codepen.io/shaikmaqsood/pen/XmydxJ It's gets the job done imho. -->
+
+        <script type="text/javascript">
+          function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+          }
+        </script>
+
+      </div>
+    </div>
+  </div>
 </main>
 
 <footer class="container py-5">
