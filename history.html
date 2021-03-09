@@ -78,20 +78,40 @@
                 <!-- Note to self, Implement story regarding integrating VoIP / SIP into the homelab ASAP-->
                 <ul class="timeline">
                   <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                    <div class="timeline-arrow"></div>
+                    <h2 class="h5 mb-0">Lab Snooping</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Present</span>
+                    <p class="text-small mt-2 font-weight-light">I wanted a way to monitor all of the uptimes and statuses of both my physical and software appliances in my lab. I poked with LibreNMS, Zabbix, DataDog, etc. But none of them fit the bill.
+                    <br/><br/>After some further digging, I found CheckMk, an open-source SNMP agent/server that could monitor it all. I hooked up all of my appliances and VMs to CheckMk via their respective SNMP clients and bam!
+                    <br/><br/>I even built a dedicated kiosk-like display for displaying the data that comes out of CheckMk and put it next to the rack on my workbench.
+                    </p>
+                    <img src="assets/img/lab-photos/Febuary-2021-1.jpg" class="img-fluid rounded" style="padding-bottom: 10px;">
+                    <img src="assets/img/lab-photos/Febuary-2021-2.png" class="img-fluid rounded">
+                  </li>
+                  <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
                         <div class="timeline-arrow"></div>
-                        <h2 class="h5 mb-0">3D Printing Technology</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Present</span>
+                        <h2 class="h5 mb-0">SIP Upgrade!</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Febuary 2021</span>
+                        <p class="text-small mt-2 font-weight-light">During the deployment of 3CX in my lab, I'd had all kinds of issues with calls being dropped, getting blacklisted from my SIP provider, etc. So I thought it was time that i upgrade my SIP/PBX setup.
+                        <br/><br/>I shopped around a bit, and decided ultimately that I wanted to stick with the same equipment manufacturer that I'd been using for my other network appliances. UniFi has Talk in their early access platform, and I was invited.
+                        <br/><br/>Having access, I purchased a couple phones, and a CloudKey G2+ for controlling them. Not shabby! Integrates with my current SIP provider, and works like a charm! Couple hiccups along the way, but I figured them out as I went.
+                        </p>
+                        <img src="assets/img/lab-photos/Jan-2021-1.png" class="img-fluid rounded" style="padding-bottom: 10px;">
+                        <img src="assets/img/lab-photos/Jan-2021-2.png" class="img-fluid rounded">
+                  </li>
+                  <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h2 class="h5 mb-0">3D Printing Technology</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>December 2020</span>
                         <p class="text-small mt-2 font-weight-light">For a while, I'd been thinking about investing in a 3D printer of some sort. After discussing with some colleagues I decided on an Ender 3 Pro. <br/><br/>
                           It's a solid budget-printer with all the features I wanted straight out of the box. Offering a removable flexible print-bed, and just enough print-area.<br/><br/>
                           I rigged it up to be operable via OctoPrint hosted on the workstation next to it on the workbench. I can effectively control it from anywhere, as well as record timelapses of my prints.<br/><br/>
                           Getting a stable baseline was tricky, but after tons of troubleshooting, I have a solid 3D-printing device for use in the lab, whether it be printing parts, or fun little toys.
                         </p>
-                        <img src="assets/img/lab-photos/Jan-2021-1.jpg" class="img-fluid rounded" style="padding-bottom: 10px;">
-                        <img src="assets/img/lab-photos/Jan-2021-2.png" class="img-fluid rounded">
+                        <img src="assets/img/lab-photos/Dec-2020-1.jpg" class="img-fluid rounded" style="padding-bottom: 10px;">
+                        <img src="assets/img/lab-photos/Dec-2020-2.png" class="img-fluid rounded">
                     </li>
                     <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
                         <div class="timeline-arrow"></div>
                         <h2 class="h5 mb-0">VoIP In the lab!</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>November, 2020</span>
-                        <p class="text-small mt-2 font-weight-light">For a while, I had felt that things had "stagnated" in the lab, so I wanted to start a new project. This new project resulted in the addition of VoIP to my lab environment.<br/><br/>
+                        <p class="text-small mt-2 font-weight-light">I had felt that things had "stagnated" in the lab, so I wanted to start a new project. This new project resulted in the addition of VoIP to my lab environment.<br/><br/>
                           I initally invested in some Cisco 7961-GE's to get introduced to VoIP/SIP/PBX and they worked pretty spot-on for a while. I also picked 3CX as my PBX/SIP solution.<br/>
                           After experimenting with what I had, I decided to take it a step further and purchase a SIP Trunk and allow out-bound calling from my lab to further my experiment.<br/><br/>
                           After that, I was introduced to a model of VoIP / Cloud PBX phone called the Cisco Meraki MC74. This phone was a cloud-managed VoIP phone for enterprise networks. I invested in two of them, and began work to integrate them into my lab.<br/><br/>
