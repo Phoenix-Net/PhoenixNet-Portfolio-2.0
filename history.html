@@ -75,11 +75,22 @@
             <div class="col-lg-7 mx-auto">
                 
                 <!-- Timeline -->
-                <!-- Note to self, Implement story regarding integrating VoIP / SIP into the homelab ASAP-->
                 <ul class="timeline">
                   <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
                     <div class="timeline-arrow"></div>
-                    <h2 class="h5 mb-0">Lab Snooping</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Present</span>
+                    <h2 class="h5 mb-0">Goodbye... For now...</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Present</span>
+                    <p class="text-small mt-2 font-weight-light">Well, this is it folks. Hate to say it, but I had a feeling this was coming some day...<br/><br/>
+                      In early april, our landlord sent my family a notice stating that he wants us to either buy, or vacate our house by the 12th of May. This was a shock me and my parents, as we'd been leasing for 5+ years and never had an issue with him. But, we tried and tried to get an extension and he just wouldn't budge. Not even a short-lease to find a house / apartment!<br/><strong>Hell, he even decided to try and showcase the property as we were still living in it!</strong><br/><br/>
+                      In response to this notice, I had to make some very difficult decisions. I first purchased a Synology DS920+ and 2x 4TB NAS drives and built a new NAS, and then proceeded to sell all of my server equipment to cover the cost, and to reduce the overhead of the equipment <br/>(Space, Noise, Electricity, etc.)<br/><br/>
+                      With this change, I was forced to make cuts in terms of what stays up, and what goes down. All Active Directory services, game servers, and leased VM(s) were expunged, and all additional required services were consolidated or replaced. There's nothing more emotionally painful than going through and making tough decisions like this.<br/><br/>
+                      I personally found it very difficult to go through and start moving data, erasing servers, and preparing them for sale, but it was had to be done. I got lucky and found buyers pretty quickly, and was able to scrape out without having my savings drained too harshly, but I still have yet to determine a place to live.<br/><br/>
+                      As for now, PhoenixNet will be retiring it's name, and be taking on a new spin-off name "PhoenixNet-Labs" for my small projects I can muster-up in my little freetime.
+                    </p>
+                    <img src="assets/img/lab-photos/April-2021.jpg" class="img-fluid rounded">
+                  </li>
+                  <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                    <div class="timeline-arrow"></div>
+                    <h2 class="h5 mb-0">Lab Snooping</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>March 2021</span>
                     <p class="text-small mt-2 font-weight-light">I wanted a way to monitor all of the uptimes and statuses of both my physical and software appliances in my lab. I poked with LibreNMS, Zabbix, DataDog, etc. But none of them fit the bill.
                     <br/><br/>After some further digging, I found CheckMk, an open-source SNMP agent/server that could monitor it all. I hooked up all of my appliances and VMs to CheckMk via their respective SNMP clients and bam!
                     <br/><br/>I even built a dedicated kiosk-like display for displaying the data that comes out of CheckMk and put it next to the rack on my workbench.
