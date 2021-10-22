@@ -2,13 +2,13 @@
   <html lang="en">
     <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>PhoenixNet - Portfolio</title>
+    <title>PhoenixNet-Labs - Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
       <!-- Metadata -->
 
-    <meta name="title" content="PhoenixNet - Portfolio">
+    <meta name="title" content="PhoenixNet-Labs - Portfolio">
     <meta name="description" content="A quick debrief of my work in my lab. For those who are interested...">
     <meta name="author" content="Phoenix Shepherd / Jacob W.">
     <meta name="keywords" content="sysadmin, Synology, CDN, UniFi, Ubiquiti, VoIP">
@@ -18,7 +18,7 @@
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://phoenixnet.tech">
-    <meta property="og:title" content="PhoenixNet - Portfolio">
+    <meta property="og:title" content="PhoenixNet-Labs - Portfolio">
     <meta property="og:description" content="A quick debrief of my work in my lab. For those who are interested...">
     <meta property="og:image" content="https://phoenixnet.tech/assets/img/pn-logo-sqr.png">
 
@@ -26,7 +26,7 @@
 
     <meta property="twitter:card" content="summary">
     <meta property="twitter:url" content="https://phoenixnet.tech">
-    <meta property="twitter:title" content="PhoenixNet - Portfolio">
+    <meta property="twitter:title" content="PhoenixNet-Labs - Portfolio">
     <meta property="twitter:description" content="A quick debrief of my work in my lab. For those who are interested...">
     <meta property="twitter:image" content="https://phoenixnet.tech/assets/img/pn-logo-sqr.png">
     
@@ -68,7 +68,7 @@
     <div class="container">
       <a href="#" class="navbar-brand d-flex align-items-center">
         <img src="assets/img/pn-logo-sqr.png" width="30" height="30" class="me-2"></img>
-        <strong>PhoenixNet</strong>
+        <strong>PhoenixNet-Labs</strong>
       </a>
       <a class="navbar-item" href="history.html"><strong>History</strong></a>
     </div>
@@ -88,6 +88,16 @@
 
   <!-- I can bet $20 that I'm not supposed to do this like this, but I'm lazy, so this'll do.-->
   <!-- LIGHTBOXES-->
+
+  <div class="lightbox-target" id="xbackbone">
+    <img src="assets/img/project-pics/xbackbone.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnxbackbone"></a>
+  </div>
+
+  <div class="lightbox-target" id="vaultwarden">
+    <img src="assets/img/project-pics/vaultwarden.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnvaultwarden"></a>
+  </div>
 
   <div class="lightbox-target" id="phoenixcloud">
     <img src="assets/img/project-pics/phoenixcloud.png" width="auto" height="auto"></img>
@@ -169,6 +179,28 @@
     <a class="lightbox-close" href="#returnPlex"></a>
   </div> 
 
+  <!-- CLOUD PORTFOLIO LIGHTBOXES-->
+
+  <div class="lightbox-target" id="matrix">
+    <img src="assets/img/project-pics/matrix.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnmatrix"></a>
+  </div> 
+
+  <div class="lightbox-target" id="backblaze">
+    <img src="assets/img/project-pics/backblaze.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnbackblaze"></a>
+  </div> 
+  
+  <div class="lightbox-target" id="uptimekuma">
+    <img src="assets/img/project-pics/uptimekuma.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnuptimekuma"></a>
+  </div> 
+
+  <div class="lightbox-target" id="azuread">
+    <img src="assets/img/project-pics/azuread.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnazuread"></a>
+  </div> 
+
   <!-- PROJECT LIGHTBOXES-->
 
   <div class="lightbox-target" id="reviveMC74">
@@ -186,12 +218,45 @@
     <a class="lightbox-close" href="#returndogcraft"></a>
   </div>
 
+  
+
   <!-- LIGHTBOXES END-->
 
   <div class="album py-5 bg-light">
     <div class="container">
-
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col" href="#returnxbackbone">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#xbackbone">
+              <img src="assets/img/project-pics/xbackbone.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">XBackbone:</strong><br/>
+              The modern, secure, and efficent replacement for PhoenixNet-CDN. After noticing a lack of updates and other issues, I figured it was time to upgrade.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://xbackbone.app/">(XBackbone)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returnvaultwarden">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#vaultwarden">
+              <img src="assets/img/project-pics/vaultwarden.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Vaultwarden:</strong><br/>
+              A Self-hosted password manager, based on Bitwarden built in Rust. There's just something so satisfying about holding your own data, especially passwords.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://bitwarden.com/">(Bitwarden)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="col" href="#returnunifi">
           <div class="card shadow-sm">
@@ -297,6 +362,87 @@
   <section class="text-center container-fluid">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
+        <h1>Cloud Portfolio</h1>
+        <p class="lead">You can't touch it, or physically own it, and yet we're all moving this way, might as well join in, right?</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col" href="#returnmatrix">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#matrix">
+              <img src="assets/img/project-pics/matrix.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Matrix:</strong><br/>
+              Because screw using Discord, Telegram and literally any other chat out there right? Decentralized communication at it's finest.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://matrix.org">(Matrix)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returnbackblaze">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#backblaze">
+              <img src="assets/img/project-pics/backblaze.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Backblaze B2:</strong><br/>
+              It's about time I start backing up my data, and I decided to do it right this time and upload it to a cloud-based storage provider.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://www.backblaze.com/business-backup.html">(Backblaze B2)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returnuptimekuma">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#uptimekuma">
+              <img src="assets/img/project-pics/uptimekuma.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">UptimeKuma:</strong><br/>
+              I took a couple different attempts at this. I wanted a status page like Atlassian's, UptimeRobot was nice, but lacked certain features.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://github.com/louislam/uptime-kuma">(UptimeKuma)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returnazuread">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#azuread">
+              <img src="assets/img/project-pics/azuread.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">AzureAD / O365:</strong><br/>
+              Microsoft's premier cloud SaaS, and widely used amongst most companies for their user account management.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://azure.microsoft.com/en-us/services/active-directory/#overview">(AzureAD)</a>, <a href="https://www.microsoft.com/en-us/microsoft-365/enterprise">(Office 365)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="text-center container-fluid">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
         <h1>Projects</h1>
         <p class="lead">Some of my favorite passion-projects.</p>
       </div>
@@ -325,25 +471,6 @@
           </div>
         </div>
 
-        <div class="col" href="#returnphoenixnetcdn">
-          <div class="card shadow-sm">
-            <a class="lightbox" href="#phoenixnetcdn">
-              <img src="assets/img/project-pics/phoenixnetcdn.png" width="100%" height="225" focusable="false"></img>
-            </a>
-
-            <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">PhoenixNet CDN:</strong><br/>
-              Screenshot / Text Sharing CDN I modded to meet my needs, includes security improvements and branding.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://cdn.gsheps.com" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Visit</a>
-                </div>
-                <small class="text-muted"><a href="https://github.com/Phoenix-Net/ShareX-Upload-Server">Share-S Server</a></small>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="col" href="#returndogcraft">
           <div class="card shadow-sm">
             <a class="lightbox" href="#dogcraft">
@@ -352,7 +479,7 @@
 
             <div class="card-body">
               <p class="card-text"><strong class="bluestrong">DogCraft:</strong><br/>
-              A small friend-based PaperMC 1.16.5 Server that I whipped up for us to play from time to time.</p>
+              A small friend-based PaperMC 1.17 Server that I whipped up for us to play from time to time.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <a id="ip" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true" onClick="copyToClipboard('#ip')">dogcraft.gsheps.net</a>
@@ -382,7 +509,7 @@
   <section class="text-center container-fluid">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1>Retired Lab Projects</h1>
+        <h1>Retired Lab Software / Services</h1>
         <p class="lead">The ones that didn't make the cut...</p>
       </div>
     </div>
@@ -392,6 +519,22 @@
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col" href="#returnphoenixnetcdn">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#phoenixnetcdn">
+              <img src="assets/img/project-pics/phoenixnetcdn.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">PhoenixNet CDN:</strong><br/>
+              Screenshot / Text Sharing CDN I modded to meet my needs, includes security improvements and branding. Retired due to lack of updates.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://github.com/Phoenix-Net/ShareX-Upload-Server">Share-S Server</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="col" href="#returnphoenixcloud">
           <div class="card shadow-sm">
@@ -451,7 +594,7 @@
               <p class="card-text"><strong class="bluestrong">Windows Server 2019 (AD, DNS):</strong><br/>
               The SSO / local DNS portion of my lab, allowing login to most of my projects with a single login as well as providing local DNS service.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">(Windows Server) <!-- This doesn't need a link either, it's self explanatory.--></small>
+                <small class="text-muted"><a href="https://www.microsoft.com/en-us/windows-server">(Windows Server)</a></small> <!-- Fine, I linked it. Happy now?--></small>
               </div>
             </div>
           </div>
@@ -561,14 +704,14 @@
 <footer class="container py-5">
   <div class="row">
     <div class="col-5 col-md">
-      <img src="assets/img/pn-logo-sqr.png" style="height:32px;"><strong class="bluestrong">PhoenixNet</strong>
+      <img src="assets/img/pn-logo-sqr.png" style="height:32px;"><strong class="bluestrong">PhoenixNet-Labs</strong>
       <small class="d-block mb-3 text-muted">2017-2021, </br>Celebrating 3+ years! 🎉</small>
     </div>
     <div class="col-5 col-md">
       <h5 class="bandanablue">Info:</h5>
       <ul class="list-unstyled text-small">
         <li><a class="text-muted" href="https://github.com/PhoenixSheppy">Github</a></li>
-        <li><a class="text-muted" href="mailto:phoenix@gsheps.net">Email</a></li>
+        <li><a class="text-muted" href="mailto:phoenix@phoenixnet.tech">Email</a></li>
       </ul>
     </div>
   </div>
