@@ -179,7 +179,17 @@
     <a class="lightbox-close" href="#returnPlex"></a>
   </div> 
 
+  <div class="lightbox-target" id="proxmox">
+    <img src="assets/img/project-pics/proxmox.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnproxmox"></a>
+  </div> 
+
   <!-- CLOUD PORTFOLIO LIGHTBOXES-->
+
+  <div class="lightbox-target" id="DUO">
+    <img src="assets/img/lab-photos/Nov-2021-Duo.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnDUO"></a>
+  </div> 
 
   <div class="lightbox-target" id="matrix">
     <img src="assets/img/project-pics/matrix.png" width="auto" height="auto"></img>
@@ -194,6 +204,11 @@
   <div class="lightbox-target" id="uptimekuma">
     <img src="assets/img/project-pics/uptimekuma.png" width="auto" height="auto"></img>
     <a class="lightbox-close" href="#returnuptimekuma"></a>
+  </div>
+  
+  <div class="lightbox-target" id="upptime">
+    <img src="assets/img/project-pics/upptime.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnupptime"></a>
   </div> 
 
   <div class="lightbox-target" id="azuread">
@@ -225,6 +240,38 @@
   <div class="album py-5 bg-light">
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col" href="#returnproxmox">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#proxmox">
+              <img src="assets/img/project-pics/proxmox.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Proxmox:</strong><br/>
+              My new hypervisor of choice, mostly due to compatability with alot of newer technologies <br/>(M.2, MFA Signin, etc.)</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://proxmox.com">(Proxmox)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returnwinserver">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#winserver">
+              <img src="assets/img/project-pics/winserver.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Windows Server 2019 (AzureAD + DNS):</strong><br/>
+              The SSO / local DNS portion of my lab, allowing login to most of my projects with a single login as well as providing local DNS service. <strong>(It's back!)</strong></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://www.microsoft.com/en-us/windows-server">(Windows Server)</a></small> <!-- Fine, I linked it. Happy now?-->
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="col" href="#returnxbackbone">
           <div class="card shadow-sm">
@@ -372,6 +419,38 @@
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
+        <div class="col" href="#returnupptime">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#upptime">
+              <img src="assets/img/project-pics/upptime.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Upptime:</strong><br/>
+              Apparently I couldn't get enough of the status-page game, so I changed it up yet again. This one is entirely run on Github via actions, issues and pages!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://upptime.js.org">(Upptime)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returnDUO">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#DUO">
+              <img src="assets/img/lab-photos/Nov-2021-Duo.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">DUO:</strong><br/>
+              As IT Security evolves, user authentication becomes more complex. DUO verifies access to hardware and software via push notifications to your smartphone!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://duo.com">(DUO)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col" href="#returnmatrix">
           <div class="card shadow-sm">
             <a class="lightbox" href="#matrix">
@@ -399,22 +478,6 @@
               It's about time I start backing up my data, and I decided to do it right this time and upload it to a cloud-based storage provider.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted"><a href="https://www.backblaze.com/business-backup.html">(Backblaze B2)</a></small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" href="#returnuptimekuma">
-          <div class="card shadow-sm">
-            <a class="lightbox" href="#uptimekuma">
-              <img src="assets/img/project-pics/uptimekuma.png" width="100%" height="225" focusable="false"></img>
-            </a>
-
-            <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">UptimeKuma:</strong><br/>
-              I took a couple different attempts at this. I wanted a status page like Atlassian's, UptimeRobot was nice, but lacked certain features.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted"><a href="https://github.com/louislam/uptime-kuma">(UptimeKuma)</a></small>
               </div>
             </div>
           </div>
@@ -520,6 +583,22 @@
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
+        <div class="col" href="#returnuptimekuma">
+          <div class="card shadow-sm">
+            <a class="lightbox" href="#uptimekuma">
+              <img src="assets/img/project-pics/uptimekuma.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">UptimeKuma:</strong><br/>
+              I took a couple different attempts at this. I wanted a status page like Atlassian's, UptimeRobot was nice, but lacked certain features.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://github.com/louislam/uptime-kuma">(UptimeKuma)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col" href="#returnphoenixnetcdn">
           <div class="card shadow-sm">
             <a class="lightbox" href="#phoenixnetcdn">
@@ -579,22 +658,6 @@
               The bread and butter of my lab, sure it's from 2012 and super outdated, but I don't care. It was cheap and runs most, if not everything I've thrown at it so far.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted"><a href="https://www.delltechnologies.com/en-us/index.htm">(Dell Technologies)</a></small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" href="#returnwinserver">
-          <div class="card shadow-sm">
-            <a class="lightbox" href="#winserver">
-              <img src="assets/img/project-pics/winserver.png" width="100%" height="225" focusable="false"></img>
-            </a>
-
-            <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">Windows Server 2019 (AD, DNS):</strong><br/>
-              The SSO / local DNS portion of my lab, allowing login to most of my projects with a single login as well as providing local DNS service.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted"><a href="https://www.microsoft.com/en-us/windows-server">(Windows Server)</a></small> <!-- Fine, I linked it. Happy now?--></small>
               </div>
             </div>
           </div>
