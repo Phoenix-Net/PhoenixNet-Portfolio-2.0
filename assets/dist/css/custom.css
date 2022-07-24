@@ -5,11 +5,11 @@
   }
 
 .bluestrong {
-    color: #33416a;
+    color: #46588d;
 }
 
 .bandanablue {
-    color: #33416a;
+    color: #46588d;
 }
 
 .bg-custom {
@@ -149,4 +149,58 @@
 
     .navbar-item:hover {
         color: white;
+    }
+
+    /* Custom Coloring For Dark Update */
+
+    h1,h2,h3,h4,h5,h6 {
+      color: white;
+    }
+
+    .lead {
+      color: white;
+    }
+
+    .section-header {
+      background: url(../../img/servers.png) no-repeat center center;
+      background-size:cover;
+    }
+
+    .section-header-bland {
+      background-color: #111;
+    }
+
+    .card-body {
+      background-color: #111;
+      color: white;
+    }
+
+    .card {
+      background-color: #111 !important;
+      border: 0px solid #111 !important;
+    }
+
+    .bg-dark {
+      background-color: #111 !important;
+    }
+
+    .text-muted {
+      color: rgb(235, 235, 235) !important;
+    }
+
+    hr {
+      color: white;
+    }
+
+    .btn-outline-secondary {
+      color: #46588d !important;
+      border-color: #46588d !important;
+    }
+
+    a {
+      color: #46588d !important;
+    }
+
+    .header-a {
+      color: white !important;
     }

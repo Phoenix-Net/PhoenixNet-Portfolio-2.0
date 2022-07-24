@@ -66,16 +66,16 @@
 
     
   </head>
-  <body>
+  <body class="bg-dark">
     
 <header>
   <div class="navbar navbar-dark bg-custom shadow-sm">
     <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
+      <a href="#" class="navbar-brand d-flex align-items-center header-a">
         <img src="assets/img/pn-logo-sqr.png" width="30" height="30" class="me-2"></img>
         <strong>PhoenixNet-Labs</strong>
       </a>
-      <a class="navbar-item" href="https://blog.phoenixnet.tech"><strong>Blog</strong></a>
+      <a class="navbar-item header-a" href="https://blog.phoenixnet.tech"><strong>Blog</strong></a>
     </div>
   </div>
 </header>
@@ -196,11 +196,6 @@
     <a class="lightbox-close" href="#returnDUO"></a>
   </div> 
 
-  <div class="lightbox-target" id="matrix">
-    <img src="assets/img/project-pics/matrix.png" width="auto" height="auto"></img>
-    <a class="lightbox-close" href="#returnmatrix"></a>
-  </div> 
-
   <div class="lightbox-target" id="backblaze">
     <img src="assets/img/project-pics/backblaze.png" width="auto" height="auto"></img>
     <a class="lightbox-close" href="#returnbackblaze"></a>
@@ -221,6 +216,31 @@
     <a class="lightbox-close" href="#returnazuread"></a>
   </div> 
 
+  <div class="lightbox-target" id="HPE">
+    <img src="assets/img/project-pics/hpe.jpg" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnHPE"></a>
+  </div> 
+
+  <div class="lightbox-target" id="RDS">
+    <img src="assets/img/project-pics/rds.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnRDS"></a>
+  </div>
+
+  <div class="lightbox-target" id="AGH">
+    <img src="assets/img/project-pics/agh.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnAGH"></a>
+  </div> 
+
+  <div class="lightbox-target" id="guac">
+    <img src="assets/img/project-pics/guac.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnguac"></a>
+  </div> 
+
+  <div class="lightbox-target" id="portainer">
+    <img src="assets/img/project-pics/portainer.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnportainer"></a>
+  </div> 
+
   <!-- PROJECT LIGHTBOXES-->
 
   <div class="lightbox-target" id="reviveMC74">
@@ -238,16 +258,21 @@
     <a class="lightbox-close" href="#returndogcraft"></a>
   </div>
 
+  <div class="lightbox-target" id="tendiedex">
+    <img src="assets/img/project-pics/tendiedex.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returntendiedex"></a>
+  </div>
+
   
 
   <!-- LIGHTBOXES END-->
 
-  <div class="album py-5 bg-light">
+  <div class="album py-5 bg-dark">
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
         <div class="col" href="#returnproxmox">
-          <div class="card shadow-sm">
+          <div class="card">
             <a class="lightbox" href="#proxmox">
               <img src="assets/img/project-pics/proxmox.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -262,8 +287,24 @@
           </div>
         </div>
 
+        <div class="col" href="#returnHPE">
+          <div class="card">
+            <a class="lightbox" href="#HPE">
+              <img src="assets/img/project-pics/hpe.jpg" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">HP Enterprise</strong><br/>
+              The foundation of my lab, running all internally-hosted services on modern, power efficent Xeon architecture. A huge step up from the previous DellEMC hardware.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://www.portainer.io/">(Portainer)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col" href="#returnwinserver">
-          <div class="card shadow-sm">
+          <div class="card">
             <a class="lightbox" href="#winserver">
               <img src="assets/img/project-pics/winserver.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -279,7 +320,7 @@
         </div>
 
         <div class="col" href="#returnxbackbone">
-          <div class="card shadow-sm">
+          <div class="card">
             <a class="lightbox" href="#xbackbone">
               <img src="assets/img/project-pics/xbackbone.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -295,7 +336,7 @@
         </div>
 
         <div class="col" href="#returnvaultwarden">
-          <div class="card shadow-sm">
+          <div class="card">
             <a class="lightbox" href="#vaultwarden">
               <img src="assets/img/project-pics/vaultwarden.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -311,7 +352,7 @@
         </div>
 
         <div class="col" href="#returnunifi">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#unifi">
               <img src="assets/img/project-pics/unifi.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -327,7 +368,7 @@
         </div>
 
         <div class="col" href="#returnunifitalk">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#unifitalk">
               <img src="assets/img/project-pics/unifitalk.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -343,7 +384,7 @@
         </div>
 
         <div class="col" href="#returnpaperlessng">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#paperlessng">
               <img src="assets/img/project-pics/paperlessng.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -359,7 +400,7 @@
         </div>
 
         <div class="col" href="#returnsynology">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#synology">
               <img src="assets/img/project-pics/synology.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -374,24 +415,9 @@
           </div>
         </div>
 
-        <div class="col" href="#returnPiHole">
-          <div class="card shadow-sm">
-            <a class="lightbox" href="#PiHole">
-              <img src="assets/img/project-pics/PiHole.png" width="100%" height="225" focusable="false"></img>
-            </a>
-
-            <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">PiHole:</strong><br/>
-              An amazingly simple, yet effective way to filter web traffic on my network via DNS queries. A tool for blocking ads on the DNS level.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted"><a href="https://pi-hole.net/">(PiHole)</a></small>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div class="col" href="#returnPlex">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#Plex">
               <img src="assets/img/project-pics/plex.jpg" width="100%" height="225" focusable="false"></img>
             </a>
@@ -407,41 +433,107 @@
         </div>
 
 
+        <div class="col" href="#returnRDS">
+          <div class="card ">
+            <a class="lightbox" href="#RDS">
+              <img src="assets/img/project-pics/rds.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Remote Desktop Services</strong><br/>
+              After actively supporting RDS-based session users at work, I figured I'd learn how the backend of it works.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/welcome-to-rds">(Microsoft RDS)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col" href="#returnAGH">
+          <div class="card ">
+            <a class="lightbox" href="#AGH">
+              <img src="assets/img/project-pics/agh.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">AdGuard Home</strong><br/>
+              Pihole is so 2016, AdGuard Home supports DNS over TLS, and HTTPS, and is more refined.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://adguard.com/en/adguard-home/overview.html">(AdGuard Home)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returnguac">
+          <div class="card ">
+            <a class="lightbox" href="#guac">
+              <img src="assets/img/project-pics/guac.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Apache Guacamole</strong><br/>
+              Remote access is vital in the lab. Guacamole permits web-based access, and supports MFA.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://guacamole.apache.org/">(Apache Guacamole)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returnportainer">
+          <div class="card ">
+            <a class="lightbox" href="#portainer">
+              <img src="assets/img/project-pics/portainer.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Portainer</strong><br/>
+              Docker cluster management, simplified into a web-based GUI. Makes management of containers easy.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://www.portainer.io/">(Portainer)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 
-  <section class="text-center container-fluid">
+  <section class="text-center container-fluid section-header-bland">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1>Cloud Portfolio</h1>
         <p class="lead">You can't touch it, or physically own it, and yet we're all moving this way, might as well join in, right?</p>
+        <hr/>
       </div>
     </div>
   </section>
 
-  <div class="album py-5 bg-light">
+  <div class="album py-5 bg-dark">
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-        <div class="col" href="#returnupptime">
-          <div class="card shadow-sm">
-            <a class="lightbox" href="#upptime">
-              <img src="assets/img/project-pics/upptime.png" width="100%" height="225" focusable="false"></img>
+        
+        <div class="col" href="#returnuptimekuma">
+          <div class="card ">
+            <a class="lightbox" href="#uptimekuma">
+              <img src="assets/img/project-pics/uptimekuma.png" width="100%" height="225" focusable="false"></img>
             </a>
 
             <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">Upptime:</strong><br/>
-              Apparently I couldn't get enough of the status-page game, so I changed it up yet again. This one is entirely run on Github via actions, issues and pages!</p>
+              <p class="card-text"><strong class="bluestrong">UptimeKuma:</strong><br/>
+              I took a couple different attempts at this. I wanted a status page like Atlassian's, UptimeRobot was nice, but lacked certain features.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted"><a href="https://upptime.js.org">(Upptime)</a></small>
+                <small class="text-muted"><a href="https://github.com/louislam/uptime-kuma">(UptimeKuma)</a></small>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col" href="#returnDUO">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#DUO">
               <img src="assets/img/lab-photos/Nov-2021-Duo.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -456,24 +548,10 @@
           </div>
         </div>
 
-        <div class="col" href="#returnmatrix">
-          <div class="card shadow-sm">
-            <a class="lightbox" href="#matrix">
-              <img src="assets/img/project-pics/matrix.png" width="100%" height="225" focusable="false"></img>
-            </a>
-
-            <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">Matrix:</strong><br/>
-              Because screw using Discord, Telegram and literally any other chat out there right? Decentralized communication at it's finest.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted"><a href="https://matrix.org">(Matrix)</a></small>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Matrix Removed-->
 
         <div class="col" href="#returnbackblaze">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#backblaze">
               <img src="assets/img/project-pics/backblaze.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -489,7 +567,7 @@
         </div>
 
         <div class="col" href="#returnazuread">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#azuread">
               <img src="assets/img/project-pics/azuread.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -508,27 +586,28 @@
     </div>
   </div>
 
-  <section class="text-center container-fluid">
+  <section class="text-center container-fluid section-header-bland">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1>Projects</h1>
         <p class="lead">Some of my favorite passion-projects.</p>
+        <hr/>
       </div>
     </div>
   </section>
 
-  <div class="album py-5 bg-light">
+  <div class="album py-5 bg-dark">
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col" href="#returnrevivemc74">
-          <div class="card shadow-sm">
+          <div class="card ">
           <a class="lightbox" href="#reviveMC74">
             <img src="assets/img/project-pics/revivemc74.png" width="100%" height="225" focusable="false"></img>
           </a>
 
             <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">ReviveMC74:</strong><br/>
+              <p class="card-text"><strong class="bluestrong">ReviveMC74</strong><br/>
               Focusing on the revival, reuse, and implementation of Cisco Meraki MC74 VoIP Phones from the ground up.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -539,73 +618,45 @@
           </div>
         </div>
 
-        <div class="col" href="#returndogcraft">
-          <div class="card shadow-sm">
-            <a class="lightbox" href="#dogcraft">
-              <img src="assets/img/project-pics/dogcraft.png" width="100%" height="225" focusable="false"></img>
+          <div class="col" href="#returntendiedex">
+            <div class="card ">
+            <a class="lightbox" href="#tendiedex">
+              <img src="assets/img/project-pics/tendiedex.png" width="100%" height="225" focusable="false"></img>
             </a>
-
-            <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">DogCraft:</strong><br/>
-              A small friend-based PaperMC 1.17 Server that I whipped up for us to play from time to time.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a id="ip" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true" onClick="copyToClipboard('#ip')">dogcraft.gsheps.net</a>
+  
+              <div class="card-body">
+                <p class="card-text"><strong class="bluestrong">TendieDex</strong><br/>
+                Chicken tenders are my lifeblood, after several suggestions, I finally made a website about them.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://revivemc74.com" class="btn btn-sm btn-outline-secondary" role="button" aria-pressed="true">Visit</a>
+                  </div>
                 </div>
-                <small class="text-muted"><em><-- Click to copy!</em> (Minecraft) <!--I don't think I need to link this, bite me. --></small>
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- Brainiacs, I found this juicy one on codepen: https://codepen.io/shaikmaqsood/pen/XmydxJ It's gets the job done imho. -->
-
-        <script type="text/javascript">
-          function copyToClipboard(element) {
-            var $temp = $("<input>");
-            $("body").append($temp);
-            $temp.val($(element).text()).select();
-            document.execCommand("copy");
-            $temp.remove();
-          }
-        </script>
 
       </div>
     </div>
   </div>
 
-  <section class="text-center container-fluid">
+  <section class="text-center container-fluid section-header-bland">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1>Retired Lab Software / Services</h1>
         <p class="lead">The ones that didn't make the cut...</p>
+        <hr/>
       </div>
     </div>
   </section>
 
-  <div class="album py-5 bg-light">
+  <div class="album py-5 bg-dark">
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-        <div class="col" href="#returnuptimekuma">
-          <div class="card shadow-sm">
-            <a class="lightbox" href="#uptimekuma">
-              <img src="assets/img/project-pics/uptimekuma.png" width="100%" height="225" focusable="false"></img>
-            </a>
-
-            <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">UptimeKuma:</strong><br/>
-              I took a couple different attempts at this. I wanted a status page like Atlassian's, UptimeRobot was nice, but lacked certain features.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted"><a href="https://github.com/louislam/uptime-kuma">(UptimeKuma)</a></small>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="col" href="#returnphoenixnetcdn">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#phoenixnetcdn">
               <img src="assets/img/project-pics/phoenixnetcdn.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -621,7 +672,7 @@
         </div>
 
         <div class="col" href="#returnphoenixcloud">
-          <div class="card shadow-sm">
+          <div class="card ">
           <a class="lightbox" href="#phoenixcloud">
             <img src="assets/img/project-pics/phoenixcloud.png" width="100%" height="225" focusable="false"></img>
           </a>
@@ -637,7 +688,7 @@
         </div>
 
         <div class="col" href="#returnvcenter">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#vcenter">
               <img src="assets/img/project-pics/vcenter.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -653,7 +704,7 @@
         </div>
 
         <div class="col" href="#returndellemc">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#dellemc">
               <img src="assets/img/project-pics/dellemc.jpg" width="100%" height="225" focusable="false"></img>
             </a>
@@ -669,7 +720,7 @@
         </div>
 
         <div class="col" href="#returntruenas">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#truenas">
               <img src="assets/img/project-pics/truenas.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -685,7 +736,7 @@
         </div>
 
         <div class="col" href="#returnoctoprint">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#octoprint">
               <img src="assets/img/project-pics/octoprint.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -701,7 +752,7 @@
         </div>
 
         <div class="col" href="#returntick">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#TICK">
               <img src="assets/img/project-pics/grafana.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -717,7 +768,7 @@
         </div>
 
         <div class="col" href="#returnhassio">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#HASSIO">
               <img src="assets/img/project-pics/hassio.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -733,7 +784,7 @@
         </div>
 
         <div class="col" href="#returncheckmk">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#checkmk">
               <img src="assets/img/project-pics/checkmk.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -749,7 +800,7 @@
         </div>
 
         <div class="col" href="#returnsip">
-          <div class="card shadow-sm">
+          <div class="card ">
             <a class="lightbox" href="#sip">
               <img src="assets/img/project-pics/sip.png" width="100%" height="225" focusable="false"></img>
             </a>
@@ -763,13 +814,62 @@
           </div>
         </div>
 
+        <div class="col" href="#returnPiHole">
+          <div class="card ">
+            <a class="lightbox" href="#PiHole">
+              <img src="assets/img/project-pics/PiHole.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">PiHole:</strong><br/>
+              An amazingly simple, yet effective way to filter web traffic on my network via DNS queries. A tool for blocking ads on the DNS level.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://pi-hole.net/">(PiHole)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returnupptime">
+          <div class="card ">
+            <a class="lightbox" href="#upptime">
+              <img src="assets/img/project-pics/upptime.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Upptime:</strong><br/>
+              Apparently I couldn't get enough of the status-page game, so I changed it up yet again. This one is entirely run on Github via actions, issues and pages!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://upptime.js.org">(Upptime)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returndogcraft">
+          <div class="card ">
+            <a class="lightbox" href="#dogcraft">
+              <img src="assets/img/project-pics/dogcraft.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">DogCraft:</strong><br/>
+              A small friend-based PaperMC 1.17 Server that I whipped up for us to play from time to time.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://minecraft.net">(Minecraft)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 
 </main>
+<hr/>
 
-<footer class="container py-5">
+<footer class="container py-5 bg-dark">
   <div class="row">
     <div class="col-5 col-md">
       <img src="assets/img/pn-logo-sqr.png" style="height:32px;"><strong class="bluestrong">PhoenixNet-Labs</strong>
