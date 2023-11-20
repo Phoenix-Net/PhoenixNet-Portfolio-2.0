@@ -41,10 +41,6 @@
 
       <!-- jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      
-      <!-- That's right, I collect analytics, but all analytics go to MY analytics server and not some sleezy company that probably wants to sell the data behind my back.-->
-    <script defer data-domain="phoenixnet.tech" src="https://analytics.phoenixnet.tech/js/plausible.js"></script>
-      <!-- https://analytics.phoenixnet.tech/phoenixnet.tech-->
 
     <style>
       .bd-placeholder-img {
@@ -187,10 +183,46 @@
     <a class="lightbox-close" href="#returnproxmox"></a>
   </div> 
 
-  <div class="lightbox-target" id="#AMP">
+  <div class="lightbox-target" id="AMP">
     <img src="assets/img/project-pics/AMP.png" width="auto" height="auto"></img>
     <a class="lightbox-close" href="#returnAMP"></a>
+  </div>
+  
+  <div class="lightbox-target" id="CiscoSwitching">
+    <img src="assets/img/project-pics/ciscoswitching.jpg" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnCiscoSwitching"></a>
+  </div>
+
+  <div class="lightbox-target" id="CiscoWireless">
+    <img src="assets/img/project-pics/ciscowireless.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnCiscoWireless"></a>
   </div> 
+
+  <div class="lightbox-target" id="CiscoVOIP">
+    <img src="assets/img/project-pics/ciscovoip.jpg" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnCiscoVOIP"></a>
+  </div> 
+
+  <div class="lightbox-target" id="Arista">
+    <img src="assets/img/project-pics/arista.jpg" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnArista"></a>
+  </div> 
+
+  <div class="lightbox-target" id="OPNSense">
+    <img src="assets/img/project-pics/opnsense.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnOPNSense"></a>
+  </div> 
+
+  <div class="lightbox-target" id="Cradlepoint">
+    <img src="assets/img/project-pics/cradlepoint.jpg" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnCradlepoint"></a>
+  </div> 
+
+  <div class="lightbox-target" id="pterodactyl">
+    <img src="assets/img/project-pics/pterodactyl.png" width="auto" height="auto"></img>
+    <a class="lightbox-close" href="#returnpterodactyl"></a>
+  </div> 
+
 
   <!-- CLOUD PORTFOLIO LIGHTBOXES-->
 
@@ -295,6 +327,22 @@
           </div>
         </div>
 
+        <div class="col" href="#returntruenas">
+          <div class="card ">
+            <a class="lightbox" href="#truenas">
+              <img src="assets/img/project-pics/truenas.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">TrueNAS Scale:</strong><br/>
+              The centralized point(s) of storage in my lab, providing NFS and SMB Shares for my clients, hosting my VDSM Docker Container.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://truenas.com">(TrueNAS)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col" href="#returnHPE">
           <div class="card">
             <a class="lightbox" href="#HPE">
@@ -303,7 +351,7 @@
 
             <div class="card-body">
               <p class="card-text"><strong class="bluestrong">HP Enterprise</strong><br/>
-              The flash-storage host of my lab, running modern, power efficent Xeon architecture. Loaded with Intel SSDs, NVMe, and 10GB Networking.</p>
+              The flash storage server in my lab, running modern, power efficent Xeon architecture. Loaded with Intel SSDs, NVMe, and 10GB Networking.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted"><a href="https://www.hpe.com/us/en/home.html">(HPE)</a></small>
               </div>
@@ -319,9 +367,105 @@
 
             <div class="card-body">
               <p class="card-text"><strong class="bluestrong">Hyve (Zeus)</strong><br/>
-              A new addition to the lab, running most internally-hosted services on a scalable architecture with tons of room for growth.</p>
+              The primary VMHosts in my lab running services on a scalable architecture with tons of room for growth. Equipped with 10GB NiCS for SAN Access.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted"><a href="https://hyvesolutions.com/">(Hyve Solutions)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returnArista">
+          <div class="card">
+            <a class="lightbox" href="#Arista">
+              <img src="assets/img/project-pics/arista.jpg" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Arista Aggregate Switching</strong><br/>
+              Serving as my core switch with 240Gbps of throughput, my Arista 7124sx DCS is the fastest I've ever switched packets in my lab.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://www.arista.com/en/">(Arista Networks)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returnCiscoSwitching">
+          <div class="card">
+            <a class="lightbox" href="#CiscoSwitching">
+              <img src="assets/img/project-pics/ciscoswitching.jpg" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Cisco Switching</strong><br/>
+              The next generation of switching in my lab, providing PoE++, 10GB cascading, and super-simple management.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://www.cisco.com/site/us/en/products/networking/switches/index.html">(Cisco)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returnCiscoWireless">
+          <div class="card">
+            <a class="lightbox" href="#CiscoWireless">
+              <img src="assets/img/project-pics/ciscowireless.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Cisco Wireless (CAPWAP/vWLC)</strong><br/>
+              The next generation of wireless in my lab, providing WAVE2 AC connectivity, enterprise security, and a simple management interface (vWLC).</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://www.cisco.com/site/us/en/products/networking/wireless/index.html">(Cisco)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returnCiscoVOIP">
+          <div class="card">
+            <a class="lightbox" href="#CiscoVOIP">
+              <img src="assets/img/project-pics/ciscovoip.jpg" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Cisco UC (VOIP/3PCC)</strong><br/>
+              Introducing professional voice communication to my lab, using Cisco's 7800, and 8800-series, UC Phones running 3PCC firmware. Utilizing VOIP.MS over TLS.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://www.cisco.com/c/en/us/products/collaboration-endpoints/ip-phones/index.html">(Cisco)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returnOPNSense">
+          <div class="card">
+            <a class="lightbox" href="#OPNSense">
+              <img src="assets/img/project-pics/opnsense.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">OPNSense (Routing, Firewall, VPN)</strong><br/>
+              The next-generation of open source firewall technology is OPNSense, running on an x86-based Sophos SG Gateway, equipped with a 10GB module.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://opnsense.org/">(OPNSense)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returnCradlepoint">
+          <div class="card">
+            <a class="lightbox" href="#Cradlepoint">
+              <img src="assets/img/project-pics/cradlepoint.jpg" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Cradlepoint (Failover WAN)</strong><br/>
+              Providing a failover backup WAN connection to my lab over LTE, just incase my primary ISP has an unexpected outage.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://cradlepoint.com/">(Cradlepoint)</a></small>
               </div>
             </div>
           </div>
@@ -335,9 +479,9 @@
 
             <div class="card-body">
               <p class="card-text"><strong class="bluestrong">Windows Server 2019 (AzureAD + DNS):</strong><br/>
-              The SSO / local DNS portion of my lab, allowing login to most of my projects with a single login as well as providing local DNS service. <strong>(It's back!)</strong></p>
+              The SSO / local DNS portion of my lab, allowing login to most of my projects with a single login as well as providing local DNS service.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted"><a href="https://www.microsoft.com/en-us/windows-server">(Windows Server)</a></small> <!-- Fine, I linked it. Happy now?-->
+                <small class="text-muted"><a href="https://www.microsoft.com/en-us/windows-server">(Windows Server)</a></small>
               </div>
             </div>
           </div>
@@ -359,37 +503,6 @@
           </div>
         </div>
 
-        <div class="col" href="#returnunifi">
-          <div class="card ">
-            <a class="lightbox" href="#unifi">
-              <img src="assets/img/project-pics/unifi.png" width="100%" height="225" focusable="false"></img>
-            </a>
-
-            <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">Ubiquiti UniFi:</strong><br/>
-              The core distribution backbone of my lab, all switching and wireless connectivity is handled by UniFi equipment.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted"><a href="https://ui.com">(Ubiquiti Networks)</a></small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" href="#returnunifitalk">
-          <div class="card ">
-            <a class="lightbox" href="#unifitalk">
-              <img src="assets/img/project-pics/unifitalk.png" width="100%" height="225" focusable="false"></img>
-            </a>
-
-            <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">UniFi Talk:</strong><br/>
-              Providing VoIP connectivity inside the lab, built on UniFi's EA Talk Touch and Flex Phones. <em>A very bleeding-edge project in the lab, and one of my newer projects!</em></p>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted"><a href="https://ui.com">(Ubiquiti Networks)</a></small>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div class="col" href="#returnpaperlessng">
           <div class="card ">
@@ -414,8 +527,8 @@
             </a>
 
             <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">Synology NAS:</strong><br/>
-              The new home of all of my data, virtualization, and etc. Centralizing all of my operations to one box, quietly and effectively.</p>
+              <p class="card-text"><strong class="bluestrong">Synology VDSM:</strong><br/>
+              Synology has some of the best apps for photo backups, cloud documents, and "Office-like" software, and now you can virtualize it with VDSM.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted"><a href="https://synology.com">(Synology)</a></small>
               </div>
@@ -449,7 +562,7 @@
 
             <div class="card-body">
               <p class="card-text"><strong class="bluestrong">Remote Desktop Services</strong><br/>
-              After actively supporting RDS-based session users at work, I figured I'd learn how the backend of it works.</p>
+              After actively supporting RDS-based session users at work, I figured I'd learn how the backend of it works. Includes RDP Gateway, w/DUO MFA, and some thin clients sprinkled throughout.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted"><a href="https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/welcome-to-rds">(Microsoft RDS)</a></small>
               </div>
@@ -457,18 +570,17 @@
           </div>
         </div>
 
-
-        <div class="col" href="#returnAGH">
+        <div class="col" href="#returnPiHole">
           <div class="card ">
-            <a class="lightbox" href="#AGH">
-              <img src="assets/img/project-pics/agh.png" width="100%" height="225" focusable="false"></img>
+            <a class="lightbox" href="#PiHole">
+              <img src="assets/img/project-pics/PiHole.png" width="100%" height="225" focusable="false"></img>
             </a>
 
             <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">AdGuard Home</strong><br/>
-              Pihole is so 2016, AdGuard Home supports DNS over TLS, and HTTPS, and is more refined.</p>
+              <p class="card-text"><strong class="bluestrong">PiHole:</strong><br/>
+              An amazingly simple, yet effective DNS adblocker. I run two PiHole LXCs in a failover setup for redundancy.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted"><a href="https://adguard.com/en/adguard-home/overview.html">(AdGuard Home)</a></small>
+                <small class="text-muted"><a href="https://pi-hole.net/">(PiHole)</a></small>
               </div>
             </div>
           </div>
@@ -482,7 +594,7 @@
 
             <div class="card-body">
               <p class="card-text"><strong class="bluestrong">Apache Guacamole</strong><br/>
-              Remote access is vital in the lab. Guacamole permits web-based access, and supports MFA.</p>
+              Remote access is vital in the lab when away from home. Guacamole permits web-based access, and supports MFA.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted"><a href="https://guacamole.apache.org/">(Apache Guacamole)</a></small>
               </div>
@@ -506,17 +618,17 @@
           </div>
         </div>
 
-        <div class="col" href="#returnAMP">
+        <div class="col" href="#returnpterodactyl">
           <div class="card ">
-            <a class="lightbox" href="#AMP">
-              <img src="assets/img/project-pics/AMP.png" width="100%" height="225" focusable="false"></img>
+            <a class="lightbox" href="#pterodactyl">
+              <img src="assets/img/project-pics/pterodactyl.png" width="100%" height="225" focusable="false"></img>
             </a>
 
             <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">Cubecoders AMP</strong><br/>
-              Game server management dialed up to 10, with clustering and software isolation.</p>
+              <p class="card-text"><strong class="bluestrong">Pterodactyl</strong><br/>
+              Truly open-source, clustered game server management. Using Docker, Pterodactyl manages game servers (wings) all from one central management server.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted"><a href="https://cubecoders.com/AMP">(Cubecoders AMP)</a></small>
+                <small class="text-muted"><a href="https://pterodactyl.io/">(Pterodactyl)</a></small>
               </div>
             </div>
           </div>
@@ -664,6 +776,8 @@
     </div>
   </div>
 
+  <!-- Retired Software-->
+
   <section class="text-center container-fluid section-header-bland">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
@@ -759,22 +873,6 @@
           </div>
         </div>
 
-        <div class="col" href="#returntruenas">
-          <div class="card ">
-            <a class="lightbox" href="#truenas">
-              <img src="assets/img/project-pics/truenas.png" width="100%" height="225" focusable="false"></img>
-            </a>
-
-            <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">TrueNAS:</strong><br/>
-              The centralized point of storage in my lab, sub-hosting my Plex, NextCloud, and Kamanga VMs and providing SMB shares for desktop clients.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted"><a href="https://truenas.com">(TrueNAS)</a></small>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="col" href="#returnoctoprint">
           <div class="card ">
             <a class="lightbox" href="#octoprint">
@@ -854,17 +952,17 @@
           </div>
         </div>
 
-        <div class="col" href="#returnPiHole">
+        <div class="col" href="#returnAGH">
           <div class="card ">
-            <a class="lightbox" href="#PiHole">
-              <img src="assets/img/project-pics/PiHole.png" width="100%" height="225" focusable="false"></img>
+            <a class="lightbox" href="#AGH">
+              <img src="assets/img/project-pics/agh.png" width="100%" height="225" focusable="false"></img>
             </a>
 
             <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">PiHole:</strong><br/>
-              An amazingly simple, yet effective way to filter web traffic on my network via DNS queries. A tool for blocking ads on the DNS level.</p>
+              <p class="card-text"><strong class="bluestrong">AdGuard Home</strong><br/>
+              Depreciated for conflict related issues. Security concerns. Issues w/SSL Certificates expiring and breaking access, etc.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted"><a href="https://pi-hole.net/">(PiHole)</a></small>
+                <small class="text-muted"><a href="https://adguard.com/en/adguard-home/overview.html">(AdGuard Home)</a></small>
               </div>
             </div>
           </div>
@@ -897,6 +995,58 @@
               A small friend-based PaperMC 1.17 Server that I whipped up for us to play from time to time.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted"><a href="https://minecraft.net">(Minecraft)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Retired UniFi, Good Riddence-->
+
+        <div class="col" href="#returnunifi">
+          <div class="card ">
+            <a class="lightbox" href="#unifi">
+              <img src="assets/img/project-pics/unifi.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Ubiquiti UniFi:</strong><br/>
+              Previously the core backbone of my lab, consisting of aggregate switching, switch, and wireless. Pricing wasn't ideal, and ultimately I moved away.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://ui.com">(Ubiquiti Networks)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" href="#returnunifitalk">
+          <div class="card ">
+            <a class="lightbox" href="#unifitalk">
+              <img src="assets/img/project-pics/unifitalk.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">UniFi Talk:</strong><br/>
+              Previously used for VOIP connectivity, Ubiquiti continued to phase out good products, and ultimately I ended up moving away.</em></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://ui.com">(Ubiquiti Networks)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seriously, AMP, get your community under control. Also, be more supportive of clustering, every freaking update my clusters would break.-->
+
+        <div class="col" href="#returnAMP">
+          <div class="card ">
+            <a class="lightbox" href="#AMP">
+              <img src="assets/img/project-pics/AMP.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">Cubecoders AMP</strong><br/>
+              Game server management software, depreciated for cluster management complexity issues, and community toxicity.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://cubecoders.com/AMP">(Cubecoders AMP)</a></small>
               </div>
             </div>
           </div>
