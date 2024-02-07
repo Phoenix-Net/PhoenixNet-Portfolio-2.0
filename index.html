@@ -203,10 +203,10 @@
     <a class="lightbox-close" href="#returnCiscoVOIP"></a>
   </div> 
 
-  <div class="lightbox-target" id="Arista">
+  <!-- Needs Cleanup <div class="lightbox-target" id="Arista">
     <img src="assets/img/project-pics/arista.jpg" width="auto" height="auto"></img>
     <a class="lightbox-close" href="#returnArista"></a>
-  </div> 
+  </div> -->
 
   <div class="lightbox-target" id="OPNSense">
     <img src="assets/img/project-pics/opnsense.png" width="auto" height="auto"></img>
@@ -251,10 +251,10 @@
     <a class="lightbox-close" href="#returnazuread"></a>
   </div> 
 
-  <div class="lightbox-target" id="HPE">
+  <!-- Pending Deletion <div class="lightbox-target" id="HPE">
     <img src="assets/img/project-pics/hpe.jpg" width="auto" height="auto"></img>
     <a class="lightbox-close" href="#returnHPE"></a>
-  </div> 
+  </div> -->
 
   <div class="lightbox-target" id="hyve">
     <img src="assets/img/project-pics/hyve.jpg" width="auto" height="auto"></img>
@@ -327,6 +327,22 @@
           </div>
         </div>
 
+        <div class="col" href="#returnvcenter">
+          <div class="card ">
+            <a class="lightbox" href="#vcenter">
+              <img src="assets/img/project-pics/vcenter.png" width="100%" height="225" focusable="false"></img>
+            </a>
+
+            <div class="card-body">
+              <p class="card-text"><strong class="bluestrong">VMWare ESXi / vCenter:</strong><br/>
+              My second hypervisor of choice, not a fan of their licensing changes, but everyone uses them, and it just works!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted"><a href="https://www.vmware.com/">(VMware)</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col" href="#returntruenas">
           <div class="card ">
             <a class="lightbox" href="#truenas">
@@ -343,7 +359,7 @@
           </div>
         </div>
 
-        <div class="col" href="#returnHPE">
+        <!-- <div class="col" href="#returnHPE"> Considering removing this block, not sure yet.
           <div class="card">
             <a class="lightbox" href="#HPE">
               <img src="assets/img/project-pics/hpe.jpg" width="100%" height="225" focusable="false"></img>
@@ -357,7 +373,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="col" href="#returnHyve">
           <div class="card">
@@ -367,7 +383,7 @@
 
             <div class="card-body">
               <p class="card-text"><strong class="bluestrong">Hyve (Zeus)</strong><br/>
-              The primary VMHosts in my lab running services on a scalable architecture with tons of room for growth. Equipped with 10GB NiCS for SAN Access.</p>
+              The primary VMHost(s) in my lab running services on a scalable architecture with tons of room for growth. Equipped with 10GB NiCS for SAN Access.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted"><a href="https://hyvesolutions.com/">(Hyve Solutions)</a></small>
               </div>
@@ -375,7 +391,7 @@
           </div>
         </div>
 
-        <div class="col" href="#returnArista">
+        <!-- Needs Cleanup <div class="col" href="#returnArista">
           <div class="card">
             <a class="lightbox" href="#Arista">
               <img src="assets/img/project-pics/arista.jpg" width="100%" height="225" focusable="false"></img>
@@ -383,13 +399,13 @@
 
             <div class="card-body">
               <p class="card-text"><strong class="bluestrong">Arista Aggregate Switching</strong><br/>
-              Serving as my core switch with 240Gbps of throughput, my Arista 7124sx DCS is the fastest I've ever switched packets in my lab.</p>
+              Serving as my core switch with 240Gbps of throughput, my Arista 7124sx DCS is the fastest I've ever switched packets in my lab to date.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted"><a href="https://www.arista.com/en/">(Arista Networks)</a></small>
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="col" href="#returnCiscoSwitching">
           <div class="card">
@@ -399,7 +415,7 @@
 
             <div class="card-body">
               <p class="card-text"><strong class="bluestrong">Cisco Switching</strong><br/>
-              The next generation of switching in my lab, providing PoE++, 10GB cascading, and super-simple management.</p>
+              The next generation of switching in my lab, providing PoE++, 10GB cascadance, and super-simple management.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted"><a href="https://www.cisco.com/site/us/en/products/networking/switches/index.html">(Cisco)</a></small>
               </div>
@@ -430,8 +446,8 @@
             </a>
 
             <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">Cisco UC (VOIP/3PCC)</strong><br/>
-              Introducing professional voice communication to my lab, using Cisco's 7800, and 8800-series, UC Phones running 3PCC firmware. Utilizing VOIP.MS over TLS.</p>
+              <p class="card-text"><strong class="bluestrong">Cisco CUCM</strong><br/>
+              Introducing professional voice communication to my lab, using Cisco's 7800, and 8800-series, connected to CUCM, CUC, CUP and vCSR for CUBE services.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted"><a href="https://www.cisco.com/c/en/us/products/collaboration-endpoints/ip-phones/index.html">(Cisco)</a></small>
               </div>
@@ -511,10 +527,10 @@
             </a>
 
             <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">Paperless-ng:</strong><br/>
+              <p class="card-text"><strong class="bluestrong">Paperless-ngx:</strong><br/>
               A web database for storing, locating, and maintaing my receipts. I've grown up saving my receipts just in case I need them, and recently I've digitalized them.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted"><a href="https://github.com/jonaswinkler/paperless-ng">(Paperless-ng)</a></small>
+                <small class="text-muted"><a href="https://docs.paperless-ngx.com/">(Paperless-ngx)</a></small>
               </div>
             </div>
           </div>
@@ -528,7 +544,7 @@
 
             <div class="card-body">
               <p class="card-text"><strong class="bluestrong">Synology VDSM:</strong><br/>
-              Synology has some of the best apps for photo backups, cloud documents, and "Office-like" software, and now you can virtualize it with VDSM.</p>
+              Synology has some of the best apps for photo backups, cloud documents, and "Office-like" software, and now you can virtualize it with vDSM.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted"><a href="https://synology.com">(Synology)</a></small>
               </div>
@@ -836,22 +852,6 @@
               My alternative to Google Drive, I use it to store and share files with my colleagues. Essentially the beginning of my labbing experience.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted"><a href="https://nextcloud.com/">(Nextcloud)</a></small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" href="#returnvcenter">
-          <div class="card ">
-            <a class="lightbox" href="#vcenter">
-              <img src="assets/img/project-pics/vcenter.png" width="100%" height="225" focusable="false"></img>
-            </a>
-
-            <div class="card-body">
-              <p class="card-text"><strong class="bluestrong">ESXi / vCenter:</strong><br/>
-              The foundation of my lab environment, allowing me to cram as many projects as possible onto the little hardware I have.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted"><a href="https://www.vmware.com/products/vcenter-server.html">(VMware)</a></small>
               </div>
             </div>
           </div>
